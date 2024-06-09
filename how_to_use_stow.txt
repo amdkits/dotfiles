@@ -1,0 +1,16 @@
+first of all
+install stow and yada yada all that
+
+to push files in github
+1. mv the dir to the appropriate file system or rename it to <name>.bak 
+and copy original folder to dotfile and such folder
+e.g. ~/.config/nvim will move to ~/dotfiles/.config/nvim
+move such that the file tree will be same
+2. stow .
+3. git add . {incase something doesn't gets added, 
+    check if that filesystem has .git in it
+        this happened with me now since nvim wouldn't get added as it had .git in it}
+4. git push origin main
+        IDK what happens but all files will be copied to the folder
+{e.g. dotfiles in this case}try finding some remedy
+
