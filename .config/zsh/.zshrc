@@ -23,3 +23,8 @@ alias ff='fastfetch'
 alias shutup='sudo shutdown now'
 alias i3wm='nvim ~/.config/i3/config'
 alias n='nvim'
+alias nt='nvim +terminal'
+alias n.='nvim .'
+alias loginsql='mysql -u amdkits -p'
+
+eval "$(zoxide init zsh)"
