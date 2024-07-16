@@ -170,6 +170,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+z exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym $mod+r mode "resize"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -195,15 +196,11 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status -c /home/$USER/.config/i3status/i3status.conf
-	#| ~/Documents/gits/i3spotifystatus/pystatus.py
-       #status_command i3status | /home/parashurama/Documents/gits/i2spotifystatus/pystatus.py
-	      font pango: Droid Sans Mono 9
+    status_command i3status -c /home/$USER/.config/i3status/i3status.conf
+        font pango: Droid Sans Mono 9
         position top
 }
 
@@ -236,7 +233,7 @@ set $mode_gaps_top Top Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_right Right Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_bottom Bottom Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_left Left Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
+bindsym $mod+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
@@ -352,10 +349,10 @@ mode "$mode_gaps_left" {
 bindsym $mod+F1 exec firefox
 bindsym $mod+F2 exec spotify
 #telegram
-bindsym $mod+F4 exec telegram-desktop
-
+bindsym $mod+Shift+F3 exec telegram-desktop
 #discord
-bindsym $mod+F3 exec discord
+bindsym $mod+Shift+F2 exec discord
+bindsym $mod+F3 exec signal-desktop
 
 # Screenshots
 exec --no-startup-id flameshot
@@ -373,9 +370,6 @@ exec_always --no-startup-id twmnd
 exec --no-startup-id i3-msg 'workspace 1:Web; exec /usr/bin/firefox'
 exec --no-startup-id i3-msg 'workspace 2:Term; exec /usr/bin/kitty -e tmux'
 
-#wallpaper
-exec_always feh --bg-center /home/parashurama/Pictures/wallpapers/City-Rain.png
-
 #nm-applet
 exec_always nm-applet
 
@@ -389,3 +383,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # i3 low power mode
 exec --no-startup-id mate-power-manager
 exec xautolock -time 30 -locker '&& i3lock-color -p' -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
+
+#wallpaper
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/Anime-City-Night.png
