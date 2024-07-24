@@ -7,7 +7,7 @@
 
 # i3 config file (v4)
 #
-# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# Please see https://i3wm.org/docs/userguide.html for a complete rheference!
 
 set $mod Mod4
 set $term kitty
@@ -60,7 +60,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec $term -e tmux
-bindsym $mod+Escape exec $term -e nvim +terminal -e tmux
+bindsym $mod+Escape exec syncthing
 # kill focused window
 bindsym $mod+q kill
 

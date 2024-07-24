@@ -1,2 +1,2 @@
-require("amdkits")
-require("amdkits.set")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

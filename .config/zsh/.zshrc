@@ -29,5 +29,6 @@ alias loginsql='mysql -u amdkits -p'
 alias bt='bluetoothctl'
 alias dbt='dmenu-bluetooth'
 alias s='syncthing'
+alias p='python3'
 
 eval "$(zoxide init zsh)"
