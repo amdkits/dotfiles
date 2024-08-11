@@ -385,4 +385,4 @@ exec --no-startup-id mate-power-manager
 exec xautolock -time 30 -locker '&& i3lock-color -p' -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
 
 #wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/Anime-City-Night.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/evangelion.png

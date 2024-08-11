@@ -30,5 +30,7 @@ alias bt='bluetoothctl'
 alias dbt='dmenu-bluetooth'
 alias s='syncthing'
 alias p='python3'
+alias stow\ .="stow --adopt ."
+alias za='zathura'
 
 eval "$(zoxide init zsh)"

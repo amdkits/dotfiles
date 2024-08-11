@@ -10,15 +10,6 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "Resume" }
 )
 
---huez colorscheme
-
---local pickers = require("huez.pickers")
-
---vim.keymap.set("n", "<leader>co", pickers.themes, {})
---vim.keymap.set("n", "<leader>cof", pickers.favorites, {})
---vim.keymap.set("n", "<leader>col", pickers.live, {})
---vim.keymap.set("n", "<leader>coe", pickers.ensured, {})
-
 -- my old configs
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
