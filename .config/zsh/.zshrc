@@ -20,7 +20,7 @@ alias c='clear'
 alias q='exit'
 alias zshr='nvim ~/.config/zsh/.zshrc'
 alias ff='fastfetch'
-alias stfu='sudo shutdown now'
+alias stfu='shutdown now'
 alias i3wm='nvim ~/.config/i3/config'
 alias n='nvim'
 alias nt='nvim +terminal'
@@ -32,5 +32,12 @@ alias s='syncthing'
 alias p='python3'
 alias stow\ .="stow --adopt ."
 alias za='zathura'
+alias brr='brave-browser'
 
 eval "$(zoxide init zsh)"
+
+# setup vi mode in zsh
+set -o vi
+
+# read manpagers in nvim
+export MANPAGER='nvim +Man!'
