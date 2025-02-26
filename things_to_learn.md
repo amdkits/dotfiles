@@ -9,7 +9,7 @@
 7. architecture
 8. reverse engg.
 9. Machine Learning (the udemy course I have)
-10. [this fker](https://vimhelp.org/)
+10. [this](https://vimhelp.org/)
 
 ## To build
 
