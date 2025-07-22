@@ -1,4 +1,4 @@
-# My Dotfiles 
+# I use arch btw
 
 This directory contains Dotfiles for my system
 
