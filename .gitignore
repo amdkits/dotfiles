@@ -1,0 +1,4 @@
+.config/weechat/sec.conf
+.config/obsidian/*/workspace.json
+.config/obsidian/*/cache
+.config/obsidian/*/.obsidian/cache
