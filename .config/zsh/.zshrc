@@ -55,11 +55,15 @@ eval "$(zoxide init zsh)"
 #vi mode
 bindkey -v
 
-# Start tmux automatically if not already inside tmux
 if command -v tmux >/dev/null 2>&1; then
-    # only start if not already in a tmux session
     [ -z "$TMUX" ] && exec tmux
 fi
+
+# nvim() {
+#   tmux set-option -g status-style "bg='#000000'"
+#   command nvim "$@"
+#   tmux set-option -g status-style "bg=#1e1e2e"
+# }
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
