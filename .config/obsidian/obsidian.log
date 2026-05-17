@@ -389,3 +389,13 @@
 2026-03-01 21:14:33 Verifying hash & signature. Size= 8322418
 2026-03-01 21:14:33 Saving file
 2026-03-01 21:14:33 Update complete.
+2026-05-01 09:19:25 Loaded main app package /usr/lib/obsidian/obsidian.asar
+2026-05-01 09:19:25 Checking for update using Github
+2026-05-01 09:19:26 Success.
+2026-05-01 09:19:26 Latest version is 1.12.7
+2026-05-01 09:19:26 App is up to date.
+2026-05-13 17:26:28 Loaded main app package /usr/lib/obsidian/obsidian.asar
+2026-05-13 17:26:28 Checking for update using Github
+2026-05-13 17:26:28 Success.
+2026-05-13 17:26:28 Latest version is 1.12.7
+2026-05-13 17:26:28 App is up to date.

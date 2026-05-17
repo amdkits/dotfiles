@@ -39,13 +39,13 @@ alias n='nvim'
 alias nt='nvim +terminal'
 alias n.='nvim .'
 alias dbt='dmenu-bluetooth'
-alias s='syncthing'
 alias stow\ .="stow --adopt ."
 alias brr='brave-browser'
 alias gpp='g++'
 alias bravew="brave --ozone-platform=wayland"
 alias discordupdate="sudo nvim /opt/discord/resources/build_info.json"
 alias aesprite="~/Programs/aseprite/build/bin/aseprite"
+alias zat="zathura"
 
 # Starship prompt
 eval "$(starship init zsh)"
