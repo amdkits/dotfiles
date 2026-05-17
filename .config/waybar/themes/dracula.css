@@ -1,0 +1,75 @@
+/* Dracula Theme */
+
+@define-color background    #282a36;
+@define-color current_line  #44475a;
+@define-color selection     #44475a;
+@define-color foreground    #f8f8f2;
+@define-color comment       #6272a4;
+@define-color cyan          #8be9fd;
+@define-color green         #50fa7b;
+@define-color orange        #ffb86c;
+@define-color pink          #ff79c6;
+@define-color purple        #bd93f9;
+@define-color red           #ff5555;
+@define-color yellow        #f1fa8c;
+
+/* aliases to match Catppuccin naming convention */
+
+@define-color rosewater     #f8f8f2;
+@define-color flamingo      #ff79c6;
+@define-color mauve         #bd93f9;
+@define-color maroon        #ff5555;
+@define-color peach         #ffb86c;
+@define-color yellow        #f1fa8c;
+@define-color green         #50fa7b;
+@define-color teal          #8be9fd;
+@define-color blue          #6272a4;
+@define-color lavender      #bd93f9;
+@define-color text          #f8f8f2;
+@define-color subtext1      #e2e2dc;
+@define-color subtext0      #c8c8c0;
+@define-color overlay2      #b0b0aa;
+@define-color overlay1      #999992;
+@define-color overlay0      #7c7c76;
+@define-color surface2      #565761;
+@define-color surface1      #44475a;
+@define-color surface0      #343746;
+@define-color base          #282a36;
+@define-color mantle        #21222c;
+@define-color crust         #191a21;
+
+/*
+    br - border
+    bg - background
+    fg - foreground
+*/
+
+/* main colors */
+
+@define-color accent        @purple;
+@define-color main-br       @comment;
+@define-color main-bg       @base;
+@define-color main-fg       @text;
+@define-color hover-bg      shade(@base, 1.2);
+@define-color hover-fg      alpha(@main-fg, 0.75);
+@define-color outline       shade(@main-bg, 0.5);
+
+/* module colors */
+
+@define-color workspaces    @mantle;
+@define-color temperature   @surface0;
+@define-color memory        @base;
+@define-color cpu           @surface1;
+@define-color time          @surface0;
+@define-color date          @base;
+@define-color tray          @mantle;
+@define-color volume        @mantle;
+@define-color backlight     @base;
+@define-color battery       @surface0;
+
+/* state colors */
+
+@define-color warning       @yellow;
+@define-color critical      @red;
+@define-color charging      @green;
+
